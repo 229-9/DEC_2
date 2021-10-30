@@ -4,7 +4,7 @@ use Illuminate\Database\Migrations\Migration;
 use Illuminate\Database\Schema\Blueprint;
 use Illuminate\Support\Facades\Schema;
 
-class CreateWarausTable extends Migration
+class CreateWaraisTable extends Migration
 {
     /**
      * Run the migrations.
@@ -13,7 +13,7 @@ class CreateWarausTable extends Migration
      */
     public function up()
     {
-        Schema::create('warai', function (Blueprint $table) {
+        Schema::create('warais', function (Blueprint $table) {
             $table->id();
             $table->text('contents')->nullable();
             $table->timestamps();
@@ -27,6 +27,6 @@ class CreateWarausTable extends Migration
      */
     public function down()
     {
-        Schema::dropIfExists('waraus');
+        Schema::dropIfExists('warais');
     }
 }

@@ -21,20 +21,18 @@ Route::get('/', function () {
 Route::get('/test', function () {
     return view('test');
 });
+// Route::get('/kaiwa.index', [KaiwaController::class, 'kaiwa.index']);
 
 Route::get('/cat', [KaiwaController::class, 'cat']);
 
-Route::get('/nagomu', function () {
-    return view('nagomu');
-});
+Route::get('/nagomu', [KaiwaController::class, 'nagomu']);
 
-Route::get('/seken', function () {
-    return view('seken');
-});
+Route::get('/sekens', [KaiwaController::class, 'sekens']);
 
-Route::get('/warai', function () {
-    return view('warai');
-});
+
+Route::get('/warai', [KaiwaController::class, 'warai']);
+
+Route::get('/saegiru', [KaiwaController::class, 'saegiru']);
 
 Route::get('/dashboard', function () {
     return view('dashboard');

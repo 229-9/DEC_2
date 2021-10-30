@@ -14,7 +14,7 @@
     <link rel="stylesheet" href="mystyle.css">
     </head>
 <body>
-    <h1>です。</h1>
+<h1>{{ $contents }}です。</h1>
     <hr>
 </form>
 </body>

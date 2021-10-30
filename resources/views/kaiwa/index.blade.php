@@ -18,7 +18,7 @@
     <hr>
     <p1><a href="http://localhost/cat" class="btn">すべるお話</a><p1>
     <p1><a href="http://localhost/nagomu" class="btn">場の空気が和むお話</a><p1>
-    <p1><a href="http://localhost/seken" class="btn">世間話</a><p1>
+    <p1><a href="http://localhost/sekens" class="btn">世間話</a><p1>
     <p1><a href="http://localhost/warai" class="btn">笑いをとるお話</a><p1>
 </form>
 </body>

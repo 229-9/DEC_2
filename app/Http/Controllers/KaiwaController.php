@@ -6,6 +6,10 @@ use Illuminate\Http\Request;
 use Validator;
 use App\Models\Kaiwa;
 use App\Models\suberu;
+use App\Models\nagomu;
+use App\Models\sekens;
+use App\Models\warai;
+use App\Models\saegiru;
 
 class KaiwaController extends Controller
 {
@@ -16,6 +20,8 @@ class KaiwaController extends Controller
      */
     public function index()
     {
+        // $contents = index::inRandomOrder()->first();
+        // return view('kaiwa.index')->with('contents', $contents->contents);
         return view('kaiwa.index');
     }
 
@@ -26,7 +32,8 @@ class KaiwaController extends Controller
      */
     public function create()
     {
-        return view('kaiwa.create');
+        $contents=saegiru::inRandomOrder()->first();
+        return view('kaiwa.create')->with('contents', $contents->contents);
     }
 
     
@@ -100,19 +107,21 @@ class KaiwaController extends Controller
 
     public function nagomu()
     {
-        return view('nagomu');
+        $contents = nagomu::inRandomOrder()->first();
+        return view('nagomu')->with('contents', $contents->contents);
     }
 
-
-    public function seken()
+    public function sekens()
     {
-        return view('seken');
+        $contents = sekens::inRandomOrder()->first();
+        return view('sekens')->with('contents', $contents->contents);
     }
 
     
     public function warai()
     {
-        return view('warai');
+        $contents = warai::inRandomOrder()->first();
+        return view('warai')->with('contents', $contents->contents);
     }
 }
 
