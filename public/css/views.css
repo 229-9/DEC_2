@@ -1,0 +1,31 @@
+.btn--orange,
+a.btn--orange {
+  color: #fff;
+  background-color: #eb6100;
+}
+.btn--orange:hover,
+a.btn--orange:hover {
+  color: #fff;
+  background: #f56500;
+}
+
+a.btn--radius {
+   border-radius: 100vh;
+}
+
+h1{
+    font-size: 50px; color:rgb(17, 223, 195);
+    margin: 72px;
+    padding: 5px;
+    border-radius: 8px;
+    background-color: #d24444;
+    border: dashed #bbb;
+    box-shadow: 0 0 0 4px #d24444;
+    text-align: center;
+}
+
+p1 {
+    font-size: 56px;  
+    margin-bottom: 100px;
+}
+
