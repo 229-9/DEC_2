@@ -34,6 +34,10 @@ Route::get('/warai', [KaiwaController::class, 'warai']);
 
 Route::get('/saegiru', [KaiwaController::class, 'saegiru']);
 
+Route::get('/reply/like/{id}', 'KaiwaController@like')->name('reply.like');
+
+Route::get('/reply/unlike/{id}', 'KaiwaController@unlike')->name('reply.unlike');
+
 Route::get('/dashboard', function () {
     return view('dashboard');
 })->middleware(['auth'])->name('dashboard');

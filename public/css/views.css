@@ -1,16 +1,73 @@
-.btn--orange,
-a.btn--orange {
-  color: #fff;
-  background-color: #eb6100;
-}
-.btn--orange:hover,
-a.btn--orange:hover {
-  color: #fff;
-  background: #f56500;
+*,
+*:before,
+*:after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
 }
 
-a.btn--radius {
-   border-radius: 100vh;
+.btn,
+a.btn,
+button.btn {
+  font-size: 1.6rem;
+  font-weight: 700;
+  line-height: 1.5;
+  position: relative;
+  display: inline-block;
+  padding: 1rem 4rem;
+  cursor: pointer;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  -webkit-transition: all 0.3s;
+  transition: all 0.3s;
+  text-align: center;
+  vertical-align: middle;
+  text-decoration: none;
+  letter-spacing: 0.1em;
+  color: #212529;
+  border-radius: 0.5rem;
+}
+
+a.btn-border-shadow {
+  padding: calc(1.5rem - 12px) 3rem 1.5rem;
+
+  background: #fff;
+}
+
+a.btn-border-shadow:before {
+  position: absolute;
+  top: -6px;
+  left: -6px;
+
+  width: 100%;
+  height: 100%;
+
+  content: "";
+  -webkit-transition: all 0.3s ease;
+  transition: all 0.3s ease;
+
+  border: 3px solid #000;
+  border-radius: 0.5rem;
+}
+
+a.btn-border-shadow:hover {
+  padding: calc(1.5rem - 6px) 3rem;
+}
+
+a.btn-border-shadow:hover:before {
+  top: 0;
+  left: 0;
+}
+
+a.btn-border-shadow--color2 {
+  border-radius: 100vh;
+}
+
+a.btn-border-shadow--color2:before {
+  border-radius: 100vh;
+  -webkit-box-shadow: 3px 3px 0 #78e5e5;
+  box-shadow: 3px 3px 0 #78e5e5;
 }
 
 h1{
@@ -18,9 +75,20 @@ h1{
     margin: 72px;
     padding: 5px;
     border-radius: 8px;
-    background-color: #d24444;
+    background-color: #e9e8e8;
     border: dashed #bbb;
-    box-shadow: 0 0 0 4px #d24444;
+    box-shadow: 0 0 0 4px #faf4f4;
+    text-align: center;
+}
+
+h3{
+    font-size: 50px; color:rgb(11, 26, 24);
+    margin: 72px;
+    padding: 5px;
+    border-radius: 8px;
+    background-color: #f1eeee;
+    border: dashed #bbb;
+    box-shadow: 0 0 0 4px #faf4f4;
     text-align: center;
 }
 

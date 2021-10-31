@@ -12,11 +12,10 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
-    <link rel="stylesheet" href="mystyle.css">
+    <link rel="stylesheet" href="{{asset('css/views.css')}}">
     </head>
   <body>
-<h1>{{ $contents }}です。</h1>
-    <hr>
+<h3>{{ $contents }}</h3>
 </form>
 </body>
 </html>
